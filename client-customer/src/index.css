@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* In your main CSS file (e.g., styles.css or app.css) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+input[type='search']:focus, input[type='number']:focus, input[type='tel']:focus, input[type='text']:focus, input[type='password']:focus, textarea:focus, select:focus {
+  box-shadow: 0 0 5px #ccc;
+  opacity: 1 !important;
+  outline: 0;
+  color: #333;
+  background-color: #fff;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Custom tooltip styles */
+.ant-tooltip-inner {
+  background-color: white !important;
+  border: 1px solid #FFD700 !important; /* Yellow border */
+  border-radius: 8px !important;
+  padding: 10px !important;
+  width: 400px !important;
+}
+
+.custom-input{
+  width: 100%;
+}
+.custom-input:hover,
+.custom-input:focus,
+.custom-input:active {
+  border-color: rgba(81, 81, 81, 0.445);
+  box-shadow: 0 0 0 2px rgba(255, 255, 252, 0.2);
+}
+
+
+.custom-tooltip .ant-tooltip-arrow {
+  display: none !important; /* Hide the default arrow */
+}
+.container-80{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Search input styles */
+.search-input-container {
+  display: flex;
+  align-items: center;
+  border: 2px solid #FFD700; /* Yellow border */
+  border-radius: 8px;
+  padding: 5px;
+  background-color: white;
+}
+
+.search-input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 8px 0 0 8px;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  color: #fffc;
+  font-size: 14.4px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.search-button:hover {
+  background-color: #f0f0f0;
+}
+
